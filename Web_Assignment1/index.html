@@ -5,12 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Theres Boby - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <header>
         <nav>
+            <div class="logo">TB</div>
             <ul>
-                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About Me</a></li>
                 <li><a href="gallery.html">My Gallery</a></li>
                 <li><a href="contact.html">Contact Me</a></li>
@@ -19,43 +21,51 @@
         </nav>
     </header>
 
-
     <main>
-        <section id="hero" class="fade-in">
+        <section id="profile">
             <div class="container">
-                <img src="mypic.jpg" alt="Theres Boby" class="profile-pic">
-                <h1>Welcome to My Portfolio</h1>
-                <p>Hi, I'm Theres Boby. I'm a passionate Computer Science student and aspiring web developer.</p>
+                <h1>Theres Boby</h1>
+                <img src="mypic.jpg" alt="Profile Picture" class="profile-pic">
+                <p class="intro-text">
+                    Hi, I'm Theres Boby, a B.Tech CS student with a passion for developing innovative projects. I specialize in working with AI, web development, and enhancing user experiences.
+                </p>
+                <div class="content">
+            
+                    <ul>
+                        
+                        <li>Passionate about solving real-world problems with technology</li>
+                    </ul>
+                </div>
             </div>
         </section>
-
-        <section id="summary" class="slide-in-left">
-            <div class="container">
-                <h2>About Me</h2>
-                <p>I am a highly motivated and adaptive individual pursuing a B.Tech degree in Computer Science. Equipped with a versatile skill set, including effective communication, programming proficiency, critical thinking, polished presentation, active listening, and a passion for overcoming challenges. My academic background, combined with hands-on experience and strong writing skills, enables me to analyze problems, communicate complex ideas clearly, and maintain excellent interpersonal skills. I excel in collaborative environments, contributing positively to teams and projects.</p>
-            </div>
-        </section>
+        
 
         <section id="skills">
             <div class="container">
                 <h2>My Skills</h2>
-                <h3>Programming Languages:</h3>
-                <ul class="skills-list">
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>C Programming</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-                <h3>Soft Skills:</h3>
-                <ul class="skills-list">
-                    <li>Problem Solving</li>
-                    <li>Presentation Skills</li>
-                    <li>Project Management</li>
-                    <li>Teamwork</li>
-                    <li>Adaptability & Flexibility</li>
-                </ul>
+                <div class="skills-container">
+                    <div class="skill-category">
+                        <h3>Programming Languages:</h3>
+                        <ul class="skills-list">
+                            <li><i class="fab fa-python"></i> Python</li>
+                            <li><i class="fab fa-java"></i> Java</li>
+                            <li><i class="fas fa-code"></i> C Programming</li>
+                            <li><i class="fab fa-html5"></i> HTML</li>
+                            <li><i class="fab fa-css3-alt"></i> CSS</li>
+                            <li><i class="fab fa-js"></i> JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Soft Skills:</h3>
+                        <ul class="skills-list">
+                            <li><i class="fas fa-puzzle-piece"></i> Problem Solving</li>
+                            <li><i class="fas fa-presentation"></i> Presentation Skills</li>
+                            <li><i class="fas fa-tasks"></i> Project Management</li>
+                            <li><i class="fas fa-users"></i> Teamwork</li>
+                            <li><i class="fas fa-sync-alt"></i> Adaptability & Flexibility</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -64,8 +74,10 @@
                 <h2>Featured Project</h2>
                 <div class="project">
                     <h3>MyClinicMate</h3>
+                    <img src="myclinicmate-preview.jpg" alt="MyClinicMate Preview" class="project-image">
                     <p>A healthcare app for booking and managing medical appointments. Features include secure user authentication, doctor search, appointment scheduling, and a feedback system. Integrated a chatbot that answers medical-related queries to enhance user experience.</p>
                     <p><strong>Technologies used:</strong> Flutter (Frontend), Firebase (Backend), Google Maps API, OpenAI API</p>
+                    <a href="#" class="project-link">View Project</a>
                 </div>
             </div>
         </section>
@@ -74,33 +86,36 @@
             <div class="container">
                 <h2>Let's Connect!</h2>
                 <p>I'm always open to new opportunities and collaborations.</p>
-                <div class="contact-info">
-                    <h3>Contact Information</h3>
-                    <ul>
-                        <li><i class="fas fa-envelope"></i> <a href="mailto:theresmaprakavil@gmail.com">theresmaprakavil@gmail.com</a></li>
-                       
-                    </ul>
-                </div>
-                <div class="social-links">
-                    <h3>Social Media</h3>
-                    <ul>
-                        <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/theres-boby-952b40254" target="_blank">LinkedIn</a></li>
-                        <li><i class="fab fa-github"></i> <a href="https://github.com/TheresBoby" target="_blank">GitHub</a></li>
-                        
-                    </ul>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Contact Information</h3>
+                        <ul>
+                            <li><i class="fas fa-envelope"></i> <a href="mailto:theresmaprakavil@gmail.com">theresmaprakavil@gmail.com</a></li>
+                        </ul>
+                    </div>
+                    <div class="social-links">
+                        <h3>Social Media</h3>
+                        <ul>
+                            <li><a href="https://www.linkedin.com/in/theres-boby-952b40254" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                            <li><a href="https://github.com/TheresBoby" target="_blank"><i class="fab fa-github"></i> GitHub</a></li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="contact-form">
                     <h3>Send Me a Message</h3>
                     <form action="#" method="POST">
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name" required>
-                        
-                        <label for="email">Email:</label>
-                        <input type="email" id="email" name="email" required>
-                        
-                        <label for="message">Message:</label>
-                        <textarea id="message" name="message" required></textarea>
-                        
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message:</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
                         <button type="submit" class="btn">Send Message</button>
                     </form>
                 </div>
@@ -116,4 +131,4 @@
 
     <script src="script.js"></script>
 </body>
-</html
+</html>
