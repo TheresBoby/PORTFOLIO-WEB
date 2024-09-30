@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 :root {
-    --bg-color: #2C2A33; /* Soft dark grey for a calm background */
-    --second-bg-color: #413E4A; /* Muted complementary background shade */
-    --text-color: #E8E8F1; /* Soft light grey for readable text */
-    --main-color: #7D6886; /* Subtle lavender-grey as the main color */
-    --accent-color: #5B506A; /* Softer accent with a balanced muted purple */
-    --gradient-1: linear-gradient(45deg, #6D5B6B, #827086); /* Gentle gradient with grey-lavender tones */
-    --gradient-2: linear-gradient(to right, #4E4653, #6D5B6B); /* Subtle, muted gradient for headers */
-}
+    --bg-color: #2C2A33;
+    --second-bg-color: #413E4A; 
+    --text-color: #E8E8F1; 
+    --main-color: #7D6886; 
+    --accent-color: #5B506A;
+    --gradient-1: linear-gradient(45deg, #6D5B6B, #827086); 
+    --gradient-2: linear-gradient(to right, #4E4653, #6D5B6B); 
 
 /* Profile Section */
 #profile {
