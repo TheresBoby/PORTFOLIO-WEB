@@ -734,7 +734,6 @@ select.form-control {
         transform: translateY(0);
     }
 }
-
 /* Staggered Animation */
 .contact-info { animation-delay: 0.1s; }
 .social-links { animation-delay: 0.2s; }
