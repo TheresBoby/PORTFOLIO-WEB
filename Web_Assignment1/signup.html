@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign Up - Theres Boby Portfolio</title>
+    <title>Registration - Theres Boby Portfolio</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,41 +20,129 @@
     </header>
 
     <main>
-        <section id="signup">
-            <h1>Join My Newsletter</h1>
-            <p>Get updates on my latest projects, skills, and tech insights!</p>
+        <div class="registration-container">
+            <h1 class="registration-title">Complete Registration Form</h1>
+            <p>Join my community and stay updated with the latest tech insights!</p>
             
-            <form id="signup-form" action="#" method="POST">
-                <div class="form-group">
-                    <label for="full-name">Full Name:</label>
-                    <input type="text" id="full-name" name="full-name" required>
+            <form class="registration-form" action="#" method="POST">
+                <!-- Personal Information Section -->
+                <div class="form-section">
+                    <h2>Personal Information</h2>
+                    
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" class="form-control" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" class="form-control" placeholder="Enter your password" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <textarea id="address" class="form-control" placeholder="Enter your address"></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Gender</label>
+                        <div class="radio-group">
+                            <label><input type="radio" name="gender" value="male"> Male</label>
+                            <label><input type="radio" name="gender" value="female"> Female</label>
+                            <label><input type="radio" name="gender" value="other"> Other</label>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
+                <!-- Professional Information Section -->
+                <div class="form-section">
+                    <h2>Professional Information</h2>
+
+                    <div class="form-group">
+                        <label for="qualification">Qualification</label>
+                        <select id="qualification" class="form-control">
+                            <option value="">Select Qualification</option>
+                            <option value="btech">BTech</option>
+                            <option value="mtech">MTech</option>
+                            <option value="phd">PhD</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="occupation">Current Occupation</label>
+                        <input type="text" id="occupation" class="form-control" placeholder="Enter your occupation">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="company">Company/Organization</label>
+                        <input type="text" id="company" class="form-control" placeholder="Enter your company name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="skill">Skill Level</label>
+                        <input type="range" id="skill" min="0" max="100" class="form-control">
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label for="interests">Select Interests:</label>
-                    <select id="interests" name="interests">
-                        <option value="web-development">Web Development</option>
-                        <option value="ai-ml">AI/ML</option>
-                        <option value="mobile-apps">Mobile Apps</option>
-                        <option value="cybersecurity">Cybersecurity</option>
-                    </select>
+                <!-- Additional Information Section -->
+                <div class="form-section">
+                    <h2>Additional Information</h2>
+
+                    <div class="form-group">
+                        <label for="photo">Profile Photo</label>
+                        <input type="file" id="photo" accept="image/*" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Interests & Hobbies</label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="hobbies" value="games"> Games</label>
+                            <label><input type="checkbox" name="hobbies" value="movie"> Movie</label>
+                            <label><input type="checkbox" name="hobbies" value="books"> Books</label>
+                            <label><input type="checkbox" name="hobbies" value="music"> Music</label>
+                            <label><input type="checkbox" name="hobbies" value="coding"> Coding</label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="color">Favorite Color</label>
+                        <input type="color" id="color" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="profile">Portfolio/LinkedIn URL</label>
+                        <input type="url" id="profile" class="form-control" placeholder="Enter your profile URL">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="week">Preferred Start Week</label>
+                        <input type="week" id="week" class="form-control">
+                    </div>
                 </div>
 
-                <div class="form-group">
-                    <label>
-                        <input type="checkbox" name="agree-terms" required>
-                        I agree to receive newsletters
-                    </label>
+                <!-- Newsletter Preferences -->
+                <div class="form-section">
+
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" name="agree-terms" required>
+                            I agree to receive newsletters and accept the privacy policy
+                        </label>
+                    </div>
                 </div>
 
-                <button type="submit" class="btn">Sign Up</button>
+                <div class="btn-group">
+                    <button type="submit" class="btn btn-primary">Register</button>
+                    <button type="reset" class="btn btn-secondary">Reset Form</button>
+                </div>
             </form>
-        </section>
+        </div>
     </main>
 
     <footer>
